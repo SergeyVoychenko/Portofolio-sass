@@ -1,0 +1,69 @@
+.skills {
+    background-color: #fffaf2;
+}
+.skills__img {
+    width: 100%;
+}
+.skills__wrapper {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 125px;
+    padding-bottom: 145px;
+}
+.skills__list {
+    display: grid;
+    row-gap: 18px;
+}
+.order-1 {
+    margin-bottom: 32px;
+}
+.skills__title {
+      color: #333333;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.39;
+}
+.skills__text {
+    color: #333333;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.39;
+}
+.skills__list-item {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    align-items: center;
+    row-gap: 18px;
+}
+.skills__list-progress-item {
+    color: #333333;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.39;
+}
+.uxresearch__progress-bar::after {
+    content: "";
+    display: block;
+    background-color: #c66c49;
+    height: 24px;
+    width: 85.5%;
+}
+.uidesign__progress-bar::after {
+    content: "";
+    display: block;
+    background-color: #c66c49;
+    height: 24px;
+    width: 78.7%;
+}
+.front-end__progress-bar::after {
+    content: "";
+    display: block;
+    background-color: #c66c49;
+    height: 24px;
+    width: 64.12%;
+}
+.skills__progress-bar {
+    background-color: #f5d6ab;
+    height: 24px;
+    width: 100%;
+}

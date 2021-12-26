@@ -1,0 +1,28 @@
+.get-in-touch {
+    background-color: #fffaf2;
+    padding-bottom: 70px;
+}
+.arrow-top--grid {
+    grid-row-end: 3;
+    grid-column-end: 4;
+    align-self: end;
+    justify-self: end;
+}
+.get-in-touch__title {
+    padding-bottom: 51px;
+}
+.get-in-touch__list {
+    display: grid;
+    grid-template-columns: 36% 36% 28%;
+    grid-template-rows: 1fr 24px;
+    row-gap: 80px;
+}
+.get-in-touch__link {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.22;
+    color: #333333;
+}
+.get-in-touch__item {
+    margin-bottom: 14px;
+}

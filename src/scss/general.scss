@@ -1,0 +1,43 @@
+html {
+    font-family: "Libre Franklin", sans-serif;
+    font-style: normal;
+    font-size: 10px;
+}
+.container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    @include tablet {
+        width: 80%;
+    }
+}
+.title {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #333333;
+    padding-top: 93px;
+    padding-bottom: 86px;
+}
+.text-style {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.66;
+    color: #333333;
+    text-align: justify;
+}
+.arrow-left::after {
+    content: url(../img/Arrow.svg);
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-right: 14px;
+}
+.arrow-right::after {
+    content: url(../img/Arrow.svg);
+    transform: rotate(90deg);
+    display: inline-block;
+}
+.arrow-top::after {
+    content: url(../img/Arrow.svg);
+    display: inline-block;
+}
