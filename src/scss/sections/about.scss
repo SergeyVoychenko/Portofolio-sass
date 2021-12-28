@@ -3,4 +3,10 @@
 }
 .about-wrapper-for-text {
     margin-bottom: 90px;
+    @include tablet() {
+        @include mg-bt;
+    }
+    @include mobile() {
+        margin-bottom: 10px;
+    }
 }

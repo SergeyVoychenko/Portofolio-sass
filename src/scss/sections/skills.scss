@@ -1,39 +1,102 @@
 .skills {
     background-color: #fffaf2;
 }
+.skills__img-wrapper {
+    @include tablet() {
+        overflow-x: hidden;
+    }
+}
 .skills__img {
     width: 100%;
+    height: auto;
+    @include tablet() {
+        display: block;
+        width: 350px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include mobile() {
+        width: 73%;
+    }
 }
 .skills__wrapper {
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 0.5fr 1fr;
     gap: 125px;
     padding-bottom: 145px;
+    @include tablet() {
+        gap: 12px;
+        @include pd-bt();
+    }
+    @include mobile() {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        padding-bottom: 25px;
+    }
 }
 .skills__list {
     display: grid;
     row-gap: 18px;
+    @include mobile() {
+        row-gap: 9px;
+    }
 }
-.order-1 {
-    margin-bottom: 32px;
+.skills__list-item:nth-child(1) {
+    margin-bottom: 31px;
+    order: 1;
+}
+.skills__list-item:nth-child(2) {
+    order: 2;
+}
+.skills__list-item:nth-child(3) {
+    order: 3;
+}
+.skills__list-item:nth-child(4) {
+    order: 4;
+}
+@include mobile() {
+    .skills__list-item:nth-child(2) {
+        order: 4;
+    }
+    .skills__list-item:nth-child(4) {
+        order: 2;
+    }
 }
 .skills__title {
-      color: #333333;
+    color: #333333;
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 1.39;
+    @include mobile() {
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 2.08;
+    }
 }
 .skills__text {
     color: #333333;
-  font-weight: normal;
-  font-size: 1.8rem;
-  line-height: 1.39;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.39;
+    @include mobile() {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 2.08;
+    }
 }
 .skills__list-item {
     display: grid;
     grid-template-columns: 190px 1fr;
     align-items: center;
     row-gap: 18px;
+    @include tablet() {
+        grid-template-columns: 130px 1fr;
+    }
+    @include mobile() {
+        grid-template-columns: 0.3fr 0.683fr;
+    }
 }
 .skills__list-progress-item {
     color: #333333;
@@ -66,4 +129,12 @@
     background-color: #f5d6ab;
     height: 24px;
     width: 100%;
+}
+@include mobile() {
+    .skills__progress-bar,
+    .front-end__progress-bar::after,
+    .uidesign__progress-bar::after,
+    .uxresearch__progress-bar::after {
+        height: 18px;
+    }
 }
